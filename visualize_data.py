@@ -27,5 +27,5 @@ if __name__ == "__main__":
 
     for i in range(9):
         plt.subplot(330 + 1 + i)
-        plt.imshow(x_test[i].reshape((28,28)))
+        plt.imshow(x_test[i].reshape((28,28)), cmap=plt.get_cmap('gray'))
     plt.show()
