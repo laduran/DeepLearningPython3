@@ -1,0 +1,14 @@
+Accuracy results on handwritten digit recognition
+=================================================
+
+Using Average darkness
+2225 of 10000 values correct.
+
+Using Small MNIST and Sci-kit learn
+9785 of 10000 values correct.
+
+Using Large MNIST and Sci-kit learn
+9871 of 10000 values correct.
+
+Using TensorFlow with small (60k) MNIST db
+9792 of 10000 values correct.
