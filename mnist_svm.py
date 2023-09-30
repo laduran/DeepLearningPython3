@@ -3,18 +3,13 @@ mnist_svm
 ~~~~~~~~~
 
 A classifier program for recognizing handwritten digits from the MNIST
-data set, using an SVM classifier."""
-
-#### Libraries
-# Third-party libraries
+data set, using an SVM classifier from scikit-learn"""
 from sklearn import svm
-
-# My libraries
 import mnist_loader
 
 def svm_baseline():
     print ("loading MNIST training data...")
-    training_data, _, test_data = mnist_loader.load_data(pickle_filename='./data/mnist_expanded.pkl.gz')
+    training_data, _, test_data = mnist_loader.load_data(pickle_filename='mnist.pkl.gz')
     # train
     clf = svm.SVC()
     print ("Using sci-kit learn, training the model on MNIST data set...")
@@ -28,4 +23,3 @@ def svm_baseline():
 
 if __name__ == "__main__":
     svm_baseline()
-    
